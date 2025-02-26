@@ -1,0 +1,41 @@
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    margin: 0 auto;
+   
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    min-height: 320px;
+    max-width: 320px;
+    background-color: #282a36;
+    color: #f8f8f2;    
+    max-height: 100% Im !important;
+}
+
+.preview{
+    height: 50vh;
+    display: flex;
+    background: white;
+}
+
+.code-mirror-root{
+    display: flex;
+    flex-direction: column;
+    height: 100% !important;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+iframe{
+    height: 100% !important;
+}
