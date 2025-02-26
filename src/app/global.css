@@ -8,7 +8,7 @@ body {
 
 .container {
     margin: 0 auto;
-   
+    padding: 0 10px;
 }
 
 .editor-container {
@@ -17,24 +17,56 @@ body {
     gap: 10px;
     min-height: 320px;
     background-color: #282a36;
-    color: #f8f8f2;    
-    max-height: 100% Im !important;
+    color: #f8f8f2;
+    max-height: 100% !important;
+    flex-wrap: wrap;
 }
 
-.preview{
+.preview {
     height: 50vh;
     display: flex;
     background: white;
+    overflow: hidden;
+    flex-grow: 1; 
 }
 
-.code-mirror-root{
+.code-mirror-root {
     display: flex;
     flex-direction: column;
-    height: 100% !important;
+    max-height: 320px;
+    overflow-y: auto;
+    overflow-x: hidden;
     flex-grow: 1;
     flex-basis: 0;
+    border: 2px solid;
 }
 
-iframe{
+iframe {
     height: 100% !important;
+    border: none; 
+}
+
+
+@media (max-width: 768px) {
+    .editor-container {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .preview {
+        height: auto; 
+        flex-grow: 0;
+    }
+
+    .code-mirror-root {
+        max-height: 100%;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0;
+    }
 }

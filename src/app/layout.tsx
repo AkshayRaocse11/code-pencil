@@ -10,6 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <title>Code Pencil</title>
       <body>{children}</body>
     </html>
   )
