@@ -16,7 +16,6 @@ body {
     flex-direction: row;
     gap: 10px;
     min-height: 320px;
-    max-width: 320px;
     background-color: #282a36;
     color: #f8f8f2;    
     max-height: 100% Im !important;
